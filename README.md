@@ -1,33 +1,33 @@
-Projet Symfony/Angular
+#Projet Symfony/Angular
 Ce projet est une application web développée avec Symfony pour le backend et Angular pour le frontend.
 
-Installation
+#Installation
 Backend (Symfony)
 Installer les dépendances avec Composer :
 composer install
 
-Créer la base de données :
+#Créer la base de données :
 php bin/console doctrine:database:create
 
 
-Modifier le fichier .env pour configurer la base de données.
+#Modifier le fichier .env pour configurer la base de données.
 
-Mettre à jour le schéma de la base de données :
+#Mettre à jour le schéma de la base de données :
 php bin/console doctrine:schema:update --force
 
 
-Démarrer le serveur Symfony :
+#Démarrer le serveur Symfony :
 symfony server:start
 
 
-Frontend (Angular)
+#Frontend (Angular)
 Installer les dépendances avec npm :
 npm install
 
-Démarrer le serveur Angular :
+#Démarrer le serveur Angular :
 ng serve
 
-Données de départ
+#Données de départ
 Pour avoir des données initiales dans la base de données, exécuter les requêtes SQL suivantes :
 
 INSERT INTO livre (id, title, author, resume, image, categories, created_at, updated_at) VALUES 
