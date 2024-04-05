@@ -1,0 +1,24 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+app_page_show:
+    path: '/pages/{id}'
+    controller: 'App\Controller\PageController::show'
+
+app_fklivre_list:
+    path: '/api/fklivre/{param}'
+    controller: 'App\Controller\FklivreController::list'
+    methods: ['GET']
+
+app_deletelivre_list:
+    path: '/api/deletelivre/{idlivre}'
+    controller: 'App\Controller\DeletelivreController::deletelivre'
+    methods: ['DELETE']
+
+app_deletepage_list:
+    path: '/api/deletepage/{idpage}'
+    controller: 'App\Controller\DeletepageController::deletepage'
+    methods: ['DELETE']
